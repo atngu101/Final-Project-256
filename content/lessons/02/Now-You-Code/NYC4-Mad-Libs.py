@@ -12,7 +12,7 @@ y= input('Plural Noun: ')
 print("Your dirty socks smell like", y)
 z= input('Noun:')
 print('You look like you could use a/an', z)
-         
-
-
-
+a= input('Food: ')
+print('Did you fall on a/an', a, 'and are you ok?')
+b= input('Sport Verb: ')
+print('I like to', b, 'in my freetime.')
