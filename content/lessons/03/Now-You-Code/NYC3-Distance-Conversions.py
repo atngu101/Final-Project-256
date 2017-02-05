@@ -7,7 +7,7 @@ distance to yards and miles.
 For example:
 
     Enter distance in FEET:15000
-    That's 5000.0 yards or 2.8
+    That's 5000.0 yards or 2.8 miles
 
 NOTES:
     - Research the converion formulas on your own.
@@ -18,4 +18,13 @@ you'll need to solve the problem!
 '''
 
 # TODO: Write Todo list then beneath write your code
+# Enter Distance in Feet
+# Enter the formula for yards and miles
+# Convert to yards and miles
+
+feet= int(input('Enter Distance in Feet: '))
+yard= (feet/3)
+miles =(feet/5280)
+print("That's,", yard, 'yards', 'or', miles, 'miles')
+          
 

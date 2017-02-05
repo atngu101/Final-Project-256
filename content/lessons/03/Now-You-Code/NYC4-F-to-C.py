@@ -18,3 +18,10 @@ you'll need to solve the problem!
 '''
 
 # TODO: Write Todo list then beneath write your code
+# Enter the temperature in degrees F:
+# Enter formula
+# Enter Print
+
+far= int(input('Enter the temperature in Farenheit: '))
+cel= ((far-32) * 5/9)
+print("That's", '%.2f' % cel,'degrees celcius') 
