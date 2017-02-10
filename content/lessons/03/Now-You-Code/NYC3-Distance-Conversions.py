@@ -25,6 +25,6 @@ you'll need to solve the problem!
 feet= int(input('Enter Distance in Feet: '))
 yard= (feet/3)
 miles =(feet/5280)
-print("That's,", yard, 'yards', 'or', miles, 'miles')
+print("That's,", '%.2f' % yard, 'yards', 'or', '%.2f' % miles, 'miles')
           
 

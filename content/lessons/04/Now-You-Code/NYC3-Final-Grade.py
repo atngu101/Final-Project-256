@@ -26,3 +26,31 @@ you'll need to solve the problem!
 #3. print letter grade.
 
 # TODO Write code here
+print('IST Grade Calculator')
+try:
+    you = int(input('Enter total points out of 600: '))
+    if (you >= 570 or you == 600):
+        print("Grade: A")
+    elif (you >= 541 or you == 570):
+        print('Grade: -A')
+    elif (you >= 510 or you == 539):
+        print('Grade: B+')
+    elif (you >= 480 or you == 509):
+        print('Grade: B')
+    elif (you >= 450 or you == 479):
+        print('Grade: B-')
+    elif (you >= 420 or you == 449):
+        print('Grade: C+') 
+    elif (you >= 390 or you == 419):
+        print('Grade: C')
+    elif (you >=360 or you == 389):
+        print('Grade: C-')
+    elif (you >= 300 or you == 359):
+        print('Grade: D')
+    elif (you >= 0 or you == 299):
+        print('Grade: F')
+    else:
+        print('You cannot have a grade less than 0 points!')       
+
+except:
+    print('That is not a grade!')
