@@ -26,10 +26,34 @@ you'll need to solve the problem!
 '''
 
 # TODO: Write Todo list then beneath write your code
-
+# tries = 0
+# guess = ""
+# input number
+# While true (indefinite loop)
+# if guess == number, break loop 'You guessed it in "tries"')
+# else continue
 
 # Write code here (some provided for you)
 import random
 number = random.randint(1,100) # random number between 1-100
+tries = 0
+guess = ''
 print("I'm thinking of a number between 1 and 100...")
+try:    
+    while True:
+        tries += 1
+        guess =int(input('Your Guess: '))
+        if guess == number:
+            print('You guessed it in', tries, 'tries')
+            break
+        elif guess > number:
+            print('Too high. Guess Lower')
+            continue
+        else:
+            print('Too low. Guess Higher')
+            continue
+except ValueError:
+    print('That is not a valid number')
+        
+               
         
