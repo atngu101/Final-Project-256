@@ -39,5 +39,28 @@ you'll need to solve the problem!
 '''
 
 # TODO: Write Todo list then beneath write your code
+# allow users to input their values
+# define the function
+# insert the circumfrence equation
+# counter with a bad function 
+# print everything
+
 
 # Write code here 
+import math
+try:
+    radius = int(input('Enter Circle Radius: '))
+
+    def calc_area(radius):
+        area = (math.pi) * (math.pow(radius, 2))
+        return area
+    def calc_circ(radius):
+        circum = 2 * math.pi * radius
+        return circum
+
+    print('A cirle with radius', radius, 'has a') 
+    print('Circumfrence of', '%.2f' % calc_circ(radius))
+    print('and an Area of', '%.2f' % calc_area(radius))
+    
+except ValueError:
+    print('Invalid Radius!')

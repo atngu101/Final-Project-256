@@ -35,6 +35,21 @@ you'll need to solve the problem!
 '''
 
 # TODO: Write Todo list then beneath write your code
-
+# import string
+# enter the input text (string)
+# enter character (string)
+# define and argue
+# print the end
 
 # Write code here 
+char = str(input('Enter character: '))
+text = str(input('Enter Text: '))
+def char_in_text(char, text):
+    count = str(text)
+    character = str(text).count(char)
+    return character
+
+print('The character', "'", char, "'", 'appears', char_in_text(char, text), 'times in the text')
+    
+    
+    
