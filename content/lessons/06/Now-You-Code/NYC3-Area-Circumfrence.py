@@ -49,7 +49,7 @@ you'll need to solve the problem!
 # Write code here 
 import math
 try:
-    radius = int(input('Enter Circle Radius: '))
+    radius = float(input('Enter Circle Radius: '))
 
     def calc_area(radius):
         area = (math.pi) * (math.pow(radius, 2))

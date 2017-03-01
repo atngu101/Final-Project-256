@@ -49,7 +49,7 @@ def char_in_text(char, text):
     character = str(text).count(char)
     return character
 
-print('The character', "'", char, "'", 'appears', char_in_text(char, text), 'times in the text')
+print('The character', char, 'appears', char_in_text(char, text), 'times in the text')
     
     
     
