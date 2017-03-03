@@ -42,13 +42,18 @@ you'll need to solve the problem!
 # print the end
 
 # Write code here 
+
+def char_in_text(char, text):
+    count = 0
+    for i in range(0,len(text)):
+        if char == text[i]:
+            count = count + 1
+        else:
+            continue
+    return count
+
 char = str(input('Enter character: '))
 text = str(input('Enter Text: '))
-def char_in_text(char, text):
-    count = str(text)
-    character = str(text).count(char)
-    return character
-
 print('The character', char, 'appears', char_in_text(char, text), 'times in the text')
     
     

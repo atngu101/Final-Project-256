@@ -29,6 +29,7 @@ you'll need to solve the problem!
 '''
 
 # TODO: Write Todo list then beneath write your code
-
+# print Enter tweet
+# print hashtags
 
 # Write code here
