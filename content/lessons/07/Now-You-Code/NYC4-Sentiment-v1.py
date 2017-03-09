@@ -46,5 +46,35 @@ you'll need to solve the problem!
 '''
 
 # TODO: Write Todo list then beneath write your code
+# import string 
+# user enter string using like angry
+# def 2 different types of emotions
+# find a way to add up emotions based on score
+# print in a neat fashion
 
 # Write code here
+while True:
+    pos = ["happy", "like", "love", "glad"]
+    neg = ["angry", "mad", "hate", "dislike", "sad"]
+    text = input('Enter Tweet: ')
+    if text == 'quit':
+        break
+        
+    def senti(pos, neg, text):
+        senti = 0
+        tokens = text.split(' ')
+        for word in tokens:
+            if word in pos:
+                senti = senti + 1
+            elif word in neg:
+                senti = senti - 1
+
+        if senti > 0:
+            print(senti, 'positive')
+        elif senti < 0:
+            print(senti, 'negative')
+        elif senti == 0:
+            print(senti, 'neutral')
+
+    senti(pos, neg, text)
+

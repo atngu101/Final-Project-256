@@ -50,7 +50,6 @@ you'll need to solve the problem!
 import math
 try:
     radius = float(input('Enter Circle Radius: '))
-
     def calc_area(radius):
         area = (math.pi) * (math.pow(radius, 2))
         return area
@@ -58,9 +57,12 @@ try:
         circum = 2 * math.pi * radius
         return circum
 
-    print('A cirle with radius', radius, 'has a') 
-    print('Circumfrence of', '%.2f' % calc_circ(radius))
-    print('and an Area of', '%.2f' % calc_area(radius))
-    
+    if radius >= 0:
+        print('A cirle with radius', '%.3f' % radius, 'has a') 
+        print('Circumfrence of', '%.3f' % calc_circ(radius))
+        print('and an Area of', '%.3f' % calc_area(radius))
+
+    else:
+        print('Please input a postive number') 
 except ValueError:
     print('Invalid Radius!')

@@ -29,7 +29,27 @@ you'll need to solve the problem!
 '''
 
 # TODO: Write Todo list then beneath write your code
+# Import string
 # print Enter tweet
+# split string
+# define feature of hashtag
+# print alternative statement with no hashtag (2 conditional statement)
+    # 1 no hash
+    # 2 with hashtag
 # print hashtags
 
+
 # Write code here
+tweet = input('Enter tweet: ')
+tokens = tweet.split(' ')
+hashtag= '#'
+count = 0
+for token in tokens:
+    if token[0] == hashtag:
+        count = count + 1
+        print('Hashtags:', token)
+        continue
+if count == 0:
+    print('Hashtag: None')
+
+            
