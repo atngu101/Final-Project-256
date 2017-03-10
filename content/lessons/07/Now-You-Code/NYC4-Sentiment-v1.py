@@ -56,7 +56,7 @@ you'll need to solve the problem!
 while True:
     pos = ["happy", "like", "love", "glad"]
     neg = ["angry", "mad", "hate", "dislike", "sad"]
-    text = input('Enter Tweet: ')
+    text = input('Enter Text: ')
     if text == 'quit':
         break
         
