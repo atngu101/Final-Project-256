@@ -24,6 +24,20 @@ you'll need to solve the problem!
 '''
 
 # TODO: Write Todo list then beneath write your code
+# link both files
+# open file and read the lines
+# open both files for data extraction
+# if conditions fall write the text to the other text file.
+# count =0 and add each time it writes an email to other file
+
 
 # Write code here 
-
+filename = "NYC4-emails.txt", "NYC4-mbox-short.txt"
+count = 0
+with open("NYC4-emails.txt") as f:
+    with open("NYC4-mbox-short.txt", "w") as handle:
+        for line in f:
+            if "@" in line:
+                handle.write(line)
+                count += 1
+print('Wrote', count, 'emails to NYC-mbox-short.txt')

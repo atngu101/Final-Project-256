@@ -21,12 +21,16 @@ negative words to the text files!
 
 
 '''
-filename = "NYC3-pos.txt"
-filename1 = "NYC3-neg.txt"
+filename = "NYC3-pos.txt", "NYC3-neg.txt"
 # TODO: Write Todo list then beneath write your code
 # Link the pos and neg .text
+# define loadwords and link to the files
+
 # Write code here
-with open (filename,'r') as handle:
+def load_words(filename):
+    with open(filename, 'r') as handle:
+        return(handle.read().split(' '))
+
     
 while True:
     pos = load_words("NYC3-pos.txt")
