@@ -25,19 +25,21 @@ filename = "NYC3-pos.txt", "NYC3-neg.txt"
 # TODO: Write Todo list then beneath write your code
 # Link the pos and neg .text
 # define loadwords and link to the files
+# execute the pre-loaded sentiment analyzer
 
 # Write code here
 def load_words(filename):
     with open(filename, 'r') as handle:
         return(handle.read().split(' '))
-
+print('Sentiment analyzer')
     
 while True:
     pos = load_words("NYC3-pos.txt")
     neg = load_words("NYC3-neg.txt")
-    text = input('Enter Text: ')
+    text = input('Enter Text or (type "quit" to stop): ').lower()
     if text == 'quit':
         break
+        
         
     def senti(pos, neg, text):
         senti = 0
